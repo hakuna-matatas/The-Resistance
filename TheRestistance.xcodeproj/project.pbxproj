@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651B0BEA5894741FE5C97286 /* Pods_TheRestistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBBF2D377E5C87BD3818795 /* Pods_TheRestistance.framework */; };
 		E7049A221D5913F7003893B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049A211D5913F7003893B4 /* AppDelegate.swift */; };
-		E7049A241D5913F7003893B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049A231D5913F7003893B4 /* ViewController.swift */; };
+		E7049A241D5913F7003893B4 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049A231D5913F7003893B4 /* CreateGameViewController.swift */; };
 		E7049A271D5913F7003893B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7049A251D5913F7003893B4 /* Main.storyboard */; };
 		E7049A291D5913F7003893B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7049A281D5913F7003893B4 /* Assets.xcassets */; };
 		E7049A2C1D5913F7003893B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7049A2A1D5913F7003893B4 /* LaunchScreen.storyboard */; };
+		E7049A341D591802003893B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7049A331D591802003893B4 /* GoogleService-Info.plist */; };
+		E7132D471D5CEC6100773926 /* FIRSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7132D461D5CEC6100773926 /* FIRSession.swift */; };
+		E7132D4A1D5CECF900773926 /* FIRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7132D491D5CECF900773926 /* FIRConstants.swift */; };
+		E7132D4C1D5CEDDB00773926 /* FIRSessionCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7132D4B1D5CEDDB00773926 /* FIRSessionCodes.swift */; };
+		E7AA0F9D1D5BCF13000DBF3D /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */; };
+		E7DCEEA21D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA11D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift */; };
+		E7DCEEA51D5A4DA400F76F02 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA41D5A4DA400F76F02 /* JoinGameViewController.swift */; };
+		E7DCEEA71D5A55D800F76F02 /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA61D5A55D800F76F02 /* GameLobbyViewController.swift */; };
+		E7DCEEA91D5A581900F76F02 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA81D5A581900F76F02 /* User.swift */; };
+		E7DCEEAB1D5A583200F76F02 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEAA1D5A583200F76F02 /* Session.swift */; };
+		E7DCEEAE1D5A588D00F76F02 /* FIRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEAD1D5A588D00F76F02 /* FIRUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FBED832FE9B5FA7BEF9BBE3 /* Pods-TheRestistance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRestistance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheRestistance/Pods-TheRestistance.debug.xcconfig"; sourceTree = "<group>"; };
+		4DBBF2D377E5C87BD3818795 /* Pods_TheRestistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheRestistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A08315112F22CF72C82AE30 /* Pods-TheRestistance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRestistance.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRestistance/Pods-TheRestistance.release.xcconfig"; sourceTree = "<group>"; };
 		E7049A1E1D5913F7003893B4 /* TheRestistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRestistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7049A211D5913F7003893B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7049A231D5913F7003893B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7049A231D5913F7003893B4 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
 		E7049A261D5913F7003893B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7049A281D5913F7003893B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7049A2B1D5913F7003893B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7049A2D1D5913F7003893B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7049A331D591802003893B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7132D461D5CEC6100773926 /* FIRSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRSession.swift; sourceTree = "<group>"; };
+		E7132D491D5CECF900773926 /* FIRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRConstants.swift; sourceTree = "<group>"; };
+		E7132D4B1D5CEDDB00773926 /* FIRSessionCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRSessionCodes.swift; sourceTree = "<group>"; };
+		E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		E7DCEEA11D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinOrCreateGameViewController.swift; sourceTree = "<group>"; };
+		E7DCEEA41D5A4DA400F76F02 /* JoinGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
+		E7DCEEA61D5A55D800F76F02 /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobbyViewController.swift; sourceTree = "<group>"; };
+		E7DCEEA81D5A581900F76F02 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E7DCEEAA1D5A583200F76F02 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E7DCEEAD1D5A588D00F76F02 /* FIRUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651B0BEA5894741FE5C97286 /* Pods_TheRestistance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84C041A095878D03B37ABDD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FBED832FE9B5FA7BEF9BBE3 /* Pods-TheRestistance.debug.xcconfig */,
+				6A08315112F22CF72C82AE30 /* Pods-TheRestistance.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DED625F429F931BDBF8FAA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DBBF2D377E5C87BD3818795 /* Pods_TheRestistance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7049A151D5913F7003893B4 = {
 			isa = PBXGroup;
 			children = (
 				E7049A201D5913F7003893B4 /* TheRestistance */,
 				E7049A1F1D5913F7003893B4 /* Products */,
+				84C041A095878D03B37ABDD8 /* Pods */,
+				8DED625F429F931BDBF8FAA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +101,48 @@
 			isa = PBXGroup;
 			children = (
 				E7049A211D5913F7003893B4 /* AppDelegate.swift */,
-				E7049A231D5913F7003893B4 /* ViewController.swift */,
+				E7132D481D5CEC7B00773926 /* Firebase Helpers */,
+				E7DCEEA31D5A4D6000F76F02 /* Pre-Playing View Controllers */,
+				E7DCEEAC1D5A583D00F76F02 /* Game Play Objects */,
 				E7049A251D5913F7003893B4 /* Main.storyboard */,
 				E7049A281D5913F7003893B4 /* Assets.xcassets */,
 				E7049A2A1D5913F7003893B4 /* LaunchScreen.storyboard */,
 				E7049A2D1D5913F7003893B4 /* Info.plist */,
+				E7049A331D591802003893B4 /* GoogleService-Info.plist */,
+				E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */,
 			);
 			path = TheRestistance;
+			sourceTree = "<group>";
+		};
+		E7132D481D5CEC7B00773926 /* Firebase Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7132D491D5CECF900773926 /* FIRConstants.swift */,
+				E7DCEEAD1D5A588D00F76F02 /* FIRUser.swift */,
+				E7132D461D5CEC6100773926 /* FIRSession.swift */,
+				E7132D4B1D5CEDDB00773926 /* FIRSessionCodes.swift */,
+			);
+			name = "Firebase Helpers";
+			sourceTree = "<group>";
+		};
+		E7DCEEA31D5A4D6000F76F02 /* Pre-Playing View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7DCEEA11D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift */,
+				E7049A231D5913F7003893B4 /* CreateGameViewController.swift */,
+				E7DCEEA41D5A4DA400F76F02 /* JoinGameViewController.swift */,
+				E7DCEEA61D5A55D800F76F02 /* GameLobbyViewController.swift */,
+			);
+			name = "Pre-Playing View Controllers";
+			sourceTree = "<group>";
+		};
+		E7DCEEAC1D5A583D00F76F02 /* Game Play Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E7DCEEA81D5A581900F76F02 /* User.swift */,
+				E7DCEEAA1D5A583200F76F02 /* Session.swift */,
+			);
+			name = "Game Play Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7049A301D5913F7003893B4 /* Build configuration list for PBXNativeTarget "TheRestistance" */;
 			buildPhases = (
+				E5ECF112D69CC79FCDD4C89F /* [CP] Check Pods Manifest.lock */,
 				E7049A1A1D5913F7003893B4 /* Sources */,
 				E7049A1B1D5913F7003893B4 /* Frameworks */,
 				E7049A1C1D5913F7003893B4 /* Resources */,
+				2730C32F698E3F7C2EC38576 /* [CP] Embed Pods Frameworks */,
+				61932D2280154965A645830E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +180,7 @@
 				TargetAttributes = {
 					E7049A1D1D5913F7003893B4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CRQLR7R8J3;
 					};
 				};
 			};
@@ -123,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7049A2C1D5913F7003893B4 /* LaunchScreen.storyboard in Resources */,
+				E7049A341D591802003893B4 /* GoogleService-Info.plist in Resources */,
 				E7049A291D5913F7003893B4 /* Assets.xcassets in Resources */,
 				E7049A271D5913F7003893B4 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +216,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2730C32F698E3F7C2EC38576 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheRestistance/Pods-TheRestistance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61932D2280154965A645830E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheRestistance/Pods-TheRestistance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5ECF112D69CC79FCDD4C89F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7049A1A1D5913F7003893B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7049A241D5913F7003893B4 /* ViewController.swift in Sources */,
+				E7DCEEAE1D5A588D00F76F02 /* FIRUser.swift in Sources */,
+				E7132D4A1D5CECF900773926 /* FIRConstants.swift in Sources */,
+				E7DCEEAB1D5A583200F76F02 /* Session.swift in Sources */,
+				E7132D4C1D5CEDDB00773926 /* FIRSessionCodes.swift in Sources */,
+				E7DCEEA71D5A55D800F76F02 /* GameLobbyViewController.swift in Sources */,
+				E7AA0F9D1D5BCF13000DBF3D /* PlayerCell.swift in Sources */,
+				E7DCEEA51D5A4DA400F76F02 /* JoinGameViewController.swift in Sources */,
+				E7DCEEA91D5A581900F76F02 /* User.swift in Sources */,
+				E7049A241D5913F7003893B4 /* CreateGameViewController.swift in Sources */,
+				E7132D471D5CEC6100773926 /* FIRSession.swift in Sources */,
 				E7049A221D5913F7003893B4 /* AppDelegate.swift in Sources */,
+				E7DCEEA21D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,23 +391,31 @@
 		};
 		E7049A311D5913F7003893B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBED832FE9B5FA7BEF9BBE3 /* Pods-TheRestistance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheRestistance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlanGao.TheRestistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		E7049A321D5913F7003893B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A08315112F22CF72C82AE30 /* Pods-TheRestistance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheRestistance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlanGao.TheRestistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +438,7 @@
 				E7049A321D5913F7003893B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

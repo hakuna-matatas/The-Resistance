@@ -1,13 +1,225 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gpO-p6-5ee">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Join Or Create Game View Controller-->
+        <scene sceneID="1Cc-j8-bSD">
+            <objects>
+                <viewController id="gpO-p6-5ee" customClass="JoinOrCreateGameViewController" customModule="TheRestistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yjf-gP-C67"/>
+                        <viewControllerLayoutGuide type="bottom" id="tI6-x1-eh4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fL-kN-i2g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9L-Qy-pNb">
+                                <rect key="frame" x="255" y="185" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="1CM-Td-uSq"/>
+                                    <constraint firstAttribute="height" constant="30" id="Gzj-Ym-uI1"/>
+                                </constraints>
+                                <state key="normal" title="Create Game"/>
+                                <connections>
+                                    <segue destination="o5i-jB-Tgm" kind="show" identifier="goToCreateGameVC" id="JL0-Df-Ncd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-bH-NKV">
+                                <rect key="frame" x="263" y="255" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="DtE-fX-krT"/>
+                                    <constraint firstAttribute="height" constant="30" id="GlP-uk-Njw"/>
+                                </constraints>
+                                <state key="normal" title="Join Game"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToJoinGameVC" id="rBO-jb-5F0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G9L-Qy-pNb" firstAttribute="top" secondItem="yjf-gP-C67" secondAttribute="bottom" constant="165" id="LOi-Dh-iMi"/>
+                            <constraint firstItem="G9L-Qy-pNb" firstAttribute="centerX" secondItem="5fL-kN-i2g" secondAttribute="centerX" id="Pdq-ji-zzS"/>
+                            <constraint firstItem="ET6-bH-NKV" firstAttribute="centerX" secondItem="5fL-kN-i2g" secondAttribute="centerX" id="dtr-ns-jVC"/>
+                            <constraint firstItem="ET6-bH-NKV" firstAttribute="top" secondItem="G9L-Qy-pNb" secondAttribute="bottom" constant="40" id="pUv-gr-grY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dn8-hV-dNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-581" y="236"/>
+        </scene>
+        <!--Create Game View Controller-->
+        <scene sceneID="WPR-WP-EHg">
+            <objects>
+                <viewController id="o5i-jB-Tgm" customClass="CreateGameViewController" customModule="TheRestistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLf-7N-16U"/>
+                        <viewControllerLayoutGuide type="bottom" id="V5J-Vb-WGF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hpp-BC-gM8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-6D-mRS">
+                                <rect key="frame" x="248" y="208" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CsZ-c2-UWu"/>
+                                    <constraint firstAttribute="width" constant="104" id="g20-JO-4Ix"/>
+                                </constraints>
+                                <state key="normal" title="Create Game"/>
+                                <connections>
+                                    <action selector="createGameButton:" destination="o5i-jB-Tgm" eventType="touchUpInside" id="GE8-tq-4ge"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dM2-Ye-mfj">
+                                <rect key="frame" x="227" y="141" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="P8U-6h-Yhg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Tf7-nD-IVm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-kX-jJj">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VJv-F5-dJS"/>
+                                    <constraint firstAttribute="width" constant="34" id="Zj5-Xa-ltt"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="createGameButton:" destination="o5i-jB-Tgm" eventType="touchUpInside" id="6hp-3h-0Ih"/>
+                                    <segue destination="qVa-RE-ZjB" kind="unwind" identifier="unwindToJoinOrCreateVC" unwindAction="unwindToFirstVC:" id="vF1-xS-Esd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="8nO-kX-jJj" secondAttribute="leading" id="Agp-KU-Coe"/>
+                            <constraint firstItem="iiN-6D-mRS" firstAttribute="centerX" secondItem="Hpp-BC-gM8" secondAttribute="centerX" id="fAn-IN-nAV"/>
+                            <constraint firstItem="dM2-Ye-mfj" firstAttribute="top" secondItem="nLf-7N-16U" secondAttribute="bottom" constant="121" id="t0c-1i-wf4"/>
+                            <constraint firstItem="iiN-6D-mRS" firstAttribute="top" secondItem="dM2-Ye-mfj" secondAttribute="bottom" constant="37" id="tqJ-vE-WK5"/>
+                            <constraint firstItem="dM2-Ye-mfj" firstAttribute="centerX" secondItem="Hpp-BC-gM8" secondAttribute="centerX" id="ty3-qg-NiZ"/>
+                            <constraint firstItem="8nO-kX-jJj" firstAttribute="top" secondItem="nLf-7N-16U" secondAttribute="bottom" id="vUI-N5-AsC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTextField" destination="dM2-Ye-mfj" id="KsZ-Ri-Xqd"/>
+                        <segue destination="GRN-rd-dsU" kind="show" identifier="goToGameLobbyVC" id="Rdj-mC-Wmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Okf-B8-ODq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qVa-RE-ZjB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-581" y="1095"/>
+        </scene>
+        <!--Game Lobby View Controller-->
+        <scene sceneID="DUw-fd-KGp">
+            <objects>
+                <viewController id="GRN-rd-dsU" customClass="GameLobbyViewController" customModule="TheRestistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x9d-37-GQM"/>
+                        <viewControllerLayoutGuide type="bottom" id="paR-jm-1dH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hs3-Ky-KSi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-Dq-HhS">
+                                <rect key="frame" x="250" y="28" width="100.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-HX-nWj">
+                                <rect key="frame" x="20" y="550" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="D8g-b1-jaj"/>
+                                    <constraint firstAttribute="height" constant="30" id="E0w-g1-OWT"/>
+                                </constraints>
+                                <state key="normal" title="Start Game"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-Dm-z7R">
+                                <rect key="frame" x="495" y="550" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J6b-2f-GJE"/>
+                                    <constraint firstAttribute="width" constant="85" id="b0l-UC-xcK"/>
+                                </constraints>
+                                <state key="normal" title="Leave Game"/>
+                                <connections>
+                                    <action selector="leaveGameButton:" destination="GRN-rd-dsU" eventType="touchUpInside" id="fFk-dj-9tP"/>
+                                    <segue destination="H12-HB-EoZ" kind="unwind" unwindAction="unwindToFirstVC:" id="pQz-K7-s0Q"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kcg-Ur-7Vx" userLabel="Players Table View">
+                                <rect key="frame" x="20" y="167" width="560" height="266"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="TJL-K4-tek"/>
+                                    <constraint firstAttribute="width" constant="560" id="vXC-1g-tw3"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playerCell" id="GiT-sT-9Wg" customClass="PlayerCell" customModule="TheRestistance" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GiT-sT-9Wg" id="r3G-YO-krI">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-vT-JOh">
+                                                    <rect key="frame" x="17" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerNameLabel" destination="WL1-vT-JOh" id="Qrp-b0-9B8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vXC-1g-tw3"/>
+                                    </mask>
+                                </variation>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="paR-jm-1dH" firstAttribute="top" secondItem="zhv-HX-nWj" secondAttribute="bottom" constant="20" id="3ef-GB-tAZ"/>
+                            <constraint firstItem="rKQ-Dq-HhS" firstAttribute="centerX" secondItem="hs3-Ky-KSi" secondAttribute="centerX" id="9hp-o9-cht"/>
+                            <constraint firstItem="Kcg-Ur-7Vx" firstAttribute="centerY" secondItem="hs3-Ky-KSi" secondAttribute="centerY" id="Chs-fB-ySV"/>
+                            <constraint firstItem="rKQ-Dq-HhS" firstAttribute="top" secondItem="x9d-37-GQM" secondAttribute="bottom" constant="8" id="V7M-LG-MJm"/>
+                            <constraint firstItem="paR-jm-1dH" firstAttribute="top" secondItem="6xu-Dm-z7R" secondAttribute="bottom" constant="20" id="bOh-6E-eW6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6xu-Dm-z7R" secondAttribute="trailing" id="g3v-xR-ZAJ"/>
+                            <constraint firstItem="Kcg-Ur-7Vx" firstAttribute="trailing" secondItem="hs3-Ky-KSi" secondAttribute="trailingMargin" id="ip4-4G-njf"/>
+                            <constraint firstItem="Kcg-Ur-7Vx" firstAttribute="top" secondItem="rKQ-Dq-HhS" secondAttribute="bottom" constant="118" id="mzj-PS-cMm"/>
+                            <constraint firstItem="Kcg-Ur-7Vx" firstAttribute="leading" secondItem="hs3-Ky-KSi" secondAttribute="leadingMargin" id="uRh-HW-wRB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="zhv-HX-nWj" secondAttribute="leading" id="xRp-V2-W0k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accessCodeLabel" destination="rKQ-Dq-HhS" id="TZQ-Hy-5QT"/>
+                        <outlet property="playerTableView" destination="Kcg-Ur-7Vx" id="e6z-ek-K6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkp-Yy-ixh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="H12-HB-EoZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="1095"/>
+        </scene>
+        <!--Join Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="JoinGameViewController" customModule="TheRestistance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +227,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="access code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wla-Vf-nMi">
+                                <rect key="frame" x="225" y="186" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6Da-sB-SPm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-fg-9sm">
+                                <rect key="frame" x="285" y="241" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AKT-1c-6GU"/>
+                                    <constraint firstAttribute="width" constant="30" id="w7H-pL-2dw"/>
+                                </constraints>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbW-vJ-v4n"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yk0-kb-DlF">
+                                <rect key="frame" x="225" y="133" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="HxL-Uv-8gv"/>
+                                    <constraint firstAttribute="height" constant="30" id="rCz-47-fcK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-eZ-dsW">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="8Xp-PI-B65"/>
+                                    <constraint firstAttribute="height" constant="30" id="Hpa-bI-xdx"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vD3-q9-L9J"/>
+                                    <segue destination="KWH-yz-9Gn" kind="unwind" identifier="unwindToJoinOrCreateVC" unwindAction="unwindToFirstVC:" id="jYU-HR-idU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3rQ-fg-9sm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1x5-FT-VKS"/>
+                            <constraint firstItem="pZE-eZ-dsW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="69j-AZ-rjv"/>
+                            <constraint firstItem="wla-Vf-nMi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7tN-6c-bdw"/>
+                            <constraint firstItem="Yk0-kb-DlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9AX-rC-WkF"/>
+                            <constraint firstItem="wla-Vf-nMi" firstAttribute="top" secondItem="Yk0-kb-DlF" secondAttribute="bottom" constant="23" id="9cN-RQ-SrR"/>
+                            <constraint firstItem="3rQ-fg-9sm" firstAttribute="top" secondItem="wla-Vf-nMi" secondAttribute="bottom" constant="25" id="NJ7-4H-L7k"/>
+                            <constraint firstItem="wla-Vf-nMi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="Wet-ne-Biz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pZE-eZ-dsW" secondAttribute="leading" id="sOg-d2-8g5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accessCodeTextField" destination="wla-Vf-nMi" id="7nX-ff-p6a"/>
+                        <outlet property="usernameTextField" destination="Yk0-kb-DlF" id="pG0-Uw-c9h"/>
+                        <segue destination="GRN-rd-dsU" kind="show" identifier="segueToGameLobbyVC" id="q7F-oV-de1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="KWH-yz-9Gn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="250" y="236"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rdj-mC-Wmc"/>
+    </inferredMetricsTieBreakers>
 </document>
