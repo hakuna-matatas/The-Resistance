@@ -14,6 +14,7 @@ struct FIRConstants {
     static let usersRef = FIRConstants.rootRef.child("users")
     static let sessionCodesRef = FIRConstants.rootRef.child("sessionCodes")
     static let sessionsRef = FIRConstants.rootRef.child("sessions")
+    static let connectedRef = FIRConstants.rootRef.child(".info/connected")
     
     static let currentUser = FIRAuth.auth()?.currentUser
 }

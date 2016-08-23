@@ -24,9 +24,10 @@ class FIRUser {
             userRef.child("username").setValue(userName)
             userRef.child("session").setValue(sessionCode)
             
-            userRef.child("session").onDisconnectSetValue("nil")
-            
             FIRUser.addUserToSession(sessionCode, username: userName)
+            
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            userDefaults.setObject(sessionCode, forKey: "sessionCode")
             
             userCreatedHandler()
         }
@@ -38,8 +39,6 @@ class FIRUser {
         let uid = FIRConstants.currentUser!.uid
         let sessionPlayerRef = FIRConstants.sessionsRef.child(code).child(uid)
         sessionPlayerRef.setValue(username)
-        
-        sessionPlayerRef.onDisconnectRemoveValue()
     }
     
     /** Returns information about a user in the form of a callback.
@@ -59,5 +58,6 @@ class FIRUser {
         let uid = FIRConstants.currentUser!.uid
         FIRConstants.sessionsRef.child(sessionCode).child(uid).removeValue()
         FIRConstants.usersRef.child(uid).child("session").setValue("nil")
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("sessionCode")
     }
 }

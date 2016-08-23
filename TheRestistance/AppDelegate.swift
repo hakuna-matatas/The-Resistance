@@ -17,6 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         FIRApp.configure()
         
+        /* Prevents user's phone from automatically sleeping. Sleeping disconnects the user
+           from the database servers, and so will cause connectivity problems if it's automatically triggered */
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        
+        /* If the user terminated the app without clicking 'leave game', he/she will
+           be brought back to their old session */
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        if let previousSession = userDefaults.valueForKey("sessionCode") {
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            
+            
+            
+            let gameLobbyVC = storyboard.instantiateViewControllerWithIdentifier("GameLobbyViewController") as! GameLobbyViewController
+            //gameLobbyVC.accessCodeLabel.text = String(previousSession)
+            self.window?.rootViewController = gameLobbyVC
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
     
@@ -44,6 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
-
+ 
 }
 

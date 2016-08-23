@@ -20,14 +20,23 @@ class FIRSession {
     static func observeSessionInfo(sessionCode: String, addPlayerCallback: (String) -> Void, deletePlayerCallback: (String) -> Void) {
         let sessionRef = FIRConstants.sessionsRef.child(sessionCode)
         
+        /* Called when a user joins the session via code */
         sessionRef.observeEventType(.ChildAdded, withBlock: { (snapshot) in
             let newPlayer = snapshot.value as! String
             addPlayerCallback(newPlayer)
         })
         
+        /* Called when clicks the leave game button */
         sessionRef.observeEventType(.ChildRemoved, withBlock: { (snapshot) in
             let deletedPlayer = snapshot.value as! String
             deletePlayerCallback(deletedPlayer)
+            
+            /* If the session doesn't exist anymore, remove the corresponding session code */
+            sessionRef.observeSingleEventOfType(.Value, withBlock: { (sessionSnap: FIRDataSnapshot) in
+                if(!sessionSnap.exists()){
+                    FIRConstants.sessionCodesRef.child(sessionCode).removeValue()
+                }
+            })
         })
     }
     

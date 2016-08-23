@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		651B0BEA5894741FE5C97286 /* Pods_TheRestistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBBF2D377E5C87BD3818795 /* Pods_TheRestistance.framework */; };
 		E7049A221D5913F7003893B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049A211D5913F7003893B4 /* AppDelegate.swift */; };
-		E7049A241D5913F7003893B4 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7049A231D5913F7003893B4 /* CreateGameViewController.swift */; };
 		E7049A271D5913F7003893B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7049A251D5913F7003893B4 /* Main.storyboard */; };
 		E7049A291D5913F7003893B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7049A281D5913F7003893B4 /* Assets.xcassets */; };
 		E7049A2C1D5913F7003893B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7049A2A1D5913F7003893B4 /* LaunchScreen.storyboard */; };
 		E7049A341D591802003893B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7049A331D591802003893B4 /* GoogleService-Info.plist */; };
-		E7132D471D5CEC6100773926 /* FIRSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7132D461D5CEC6100773926 /* FIRSession.swift */; };
-		E7132D4A1D5CECF900773926 /* FIRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7132D491D5CECF900773926 /* FIRConstants.swift */; };
-		E7132D4C1D5CEDDB00773926 /* FIRSessionCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7132D4B1D5CEDDB00773926 /* FIRSessionCodes.swift */; };
+		E732D1FB1D6CF9BF0032A5CA /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */; };
+		E732D1FC1D6CF9BF0032A5CA /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */; };
+		E732D1FD1D6CF9BF0032A5CA /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */; };
+		E732D1FE1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1FA1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift */; };
+		E732D2031D6CF9E70032A5CA /* FIRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1FF1D6CF9E70032A5CA /* FIRConstants.swift */; };
+		E732D2041D6CF9E70032A5CA /* FIRSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D2001D6CF9E70032A5CA /* FIRSession.swift */; };
+		E732D2051D6CF9E70032A5CA /* FIRSessionCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D2011D6CF9E70032A5CA /* FIRSessionCodes.swift */; };
+		E732D2061D6CF9E70032A5CA /* FIRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D2021D6CF9E70032A5CA /* FIRUser.swift */; };
 		E7AA0F9D1D5BCF13000DBF3D /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */; };
-		E7DCEEA21D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA11D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift */; };
-		E7DCEEA51D5A4DA400F76F02 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA41D5A4DA400F76F02 /* JoinGameViewController.swift */; };
-		E7DCEEA71D5A55D800F76F02 /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA61D5A55D800F76F02 /* GameLobbyViewController.swift */; };
-		E7DCEEA91D5A581900F76F02 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEA81D5A581900F76F02 /* User.swift */; };
-		E7DCEEAB1D5A583200F76F02 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEAA1D5A583200F76F02 /* Session.swift */; };
-		E7DCEEAE1D5A588D00F76F02 /* FIRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DCEEAD1D5A588D00F76F02 /* FIRUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,22 +30,20 @@
 		6A08315112F22CF72C82AE30 /* Pods-TheRestistance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheRestistance.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheRestistance/Pods-TheRestistance.release.xcconfig"; sourceTree = "<group>"; };
 		E7049A1E1D5913F7003893B4 /* TheRestistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRestistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7049A211D5913F7003893B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7049A231D5913F7003893B4 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
 		E7049A261D5913F7003893B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7049A281D5913F7003893B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7049A2B1D5913F7003893B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7049A2D1D5913F7003893B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7049A331D591802003893B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E7132D461D5CEC6100773926 /* FIRSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRSession.swift; sourceTree = "<group>"; };
-		E7132D491D5CECF900773926 /* FIRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRConstants.swift; sourceTree = "<group>"; };
-		E7132D4B1D5CEDDB00773926 /* FIRSessionCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRSessionCodes.swift; sourceTree = "<group>"; };
+		E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGameViewController.swift; path = Controllers/CreateGameViewController.swift; sourceTree = "<group>"; };
+		E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameLobbyViewController.swift; path = Controllers/GameLobbyViewController.swift; sourceTree = "<group>"; };
+		E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoinGameViewController.swift; path = Controllers/JoinGameViewController.swift; sourceTree = "<group>"; };
+		E732D1FA1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoinOrCreateGameViewController.swift; path = Controllers/JoinOrCreateGameViewController.swift; sourceTree = "<group>"; };
+		E732D1FF1D6CF9E70032A5CA /* FIRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRConstants.swift; path = "Firebase Helpers/FIRConstants.swift"; sourceTree = "<group>"; };
+		E732D2001D6CF9E70032A5CA /* FIRSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRSession.swift; path = "Firebase Helpers/FIRSession.swift"; sourceTree = "<group>"; };
+		E732D2011D6CF9E70032A5CA /* FIRSessionCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRSessionCodes.swift; path = "Firebase Helpers/FIRSessionCodes.swift"; sourceTree = "<group>"; };
+		E732D2021D6CF9E70032A5CA /* FIRUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FIRUser.swift; path = "Firebase Helpers/FIRUser.swift"; sourceTree = "<group>"; };
 		E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
-		E7DCEEA11D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinOrCreateGameViewController.swift; sourceTree = "<group>"; };
-		E7DCEEA41D5A4DA400F76F02 /* JoinGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
-		E7DCEEA61D5A55D800F76F02 /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobbyViewController.swift; sourceTree = "<group>"; };
-		E7DCEEA81D5A581900F76F02 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E7DCEEAA1D5A583200F76F02 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		E7DCEEAD1D5A588D00F76F02 /* FIRUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +97,14 @@
 			isa = PBXGroup;
 			children = (
 				E7049A211D5913F7003893B4 /* AppDelegate.swift */,
+				E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */,
 				E7132D481D5CEC7B00773926 /* Firebase Helpers */,
 				E7DCEEA31D5A4D6000F76F02 /* Pre-Playing View Controllers */,
-				E7DCEEAC1D5A583D00F76F02 /* Game Play Objects */,
 				E7049A251D5913F7003893B4 /* Main.storyboard */,
 				E7049A281D5913F7003893B4 /* Assets.xcassets */,
 				E7049A2A1D5913F7003893B4 /* LaunchScreen.storyboard */,
 				E7049A2D1D5913F7003893B4 /* Info.plist */,
 				E7049A331D591802003893B4 /* GoogleService-Info.plist */,
-				E7AA0F9C1D5BCF13000DBF3D /* PlayerCell.swift */,
 			);
 			path = TheRestistance;
 			sourceTree = "<group>";
@@ -117,10 +112,10 @@
 		E7132D481D5CEC7B00773926 /* Firebase Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E7132D491D5CECF900773926 /* FIRConstants.swift */,
-				E7DCEEAD1D5A588D00F76F02 /* FIRUser.swift */,
-				E7132D461D5CEC6100773926 /* FIRSession.swift */,
-				E7132D4B1D5CEDDB00773926 /* FIRSessionCodes.swift */,
+				E732D1FF1D6CF9E70032A5CA /* FIRConstants.swift */,
+				E732D2001D6CF9E70032A5CA /* FIRSession.swift */,
+				E732D2011D6CF9E70032A5CA /* FIRSessionCodes.swift */,
+				E732D2021D6CF9E70032A5CA /* FIRUser.swift */,
 			);
 			name = "Firebase Helpers";
 			sourceTree = "<group>";
@@ -128,21 +123,12 @@
 		E7DCEEA31D5A4D6000F76F02 /* Pre-Playing View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E7DCEEA11D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift */,
-				E7049A231D5913F7003893B4 /* CreateGameViewController.swift */,
-				E7DCEEA41D5A4DA400F76F02 /* JoinGameViewController.swift */,
-				E7DCEEA61D5A55D800F76F02 /* GameLobbyViewController.swift */,
+				E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */,
+				E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */,
+				E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */,
+				E732D1FA1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift */,
 			);
 			name = "Pre-Playing View Controllers";
-			sourceTree = "<group>";
-		};
-		E7DCEEAC1D5A583D00F76F02 /* Game Play Objects */ = {
-			isa = PBXGroup;
-			children = (
-				E7DCEEA81D5A581900F76F02 /* User.swift */,
-				E7DCEEAA1D5A583200F76F02 /* Session.swift */,
-			);
-			name = "Game Play Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,18 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7DCEEAE1D5A588D00F76F02 /* FIRUser.swift in Sources */,
-				E7132D4A1D5CECF900773926 /* FIRConstants.swift in Sources */,
-				E7DCEEAB1D5A583200F76F02 /* Session.swift in Sources */,
-				E7132D4C1D5CEDDB00773926 /* FIRSessionCodes.swift in Sources */,
-				E7DCEEA71D5A55D800F76F02 /* GameLobbyViewController.swift in Sources */,
+				E732D2041D6CF9E70032A5CA /* FIRSession.swift in Sources */,
+				E732D2031D6CF9E70032A5CA /* FIRConstants.swift in Sources */,
+				E732D1FC1D6CF9BF0032A5CA /* GameLobbyViewController.swift in Sources */,
+				E732D2051D6CF9E70032A5CA /* FIRSessionCodes.swift in Sources */,
 				E7AA0F9D1D5BCF13000DBF3D /* PlayerCell.swift in Sources */,
-				E7DCEEA51D5A4DA400F76F02 /* JoinGameViewController.swift in Sources */,
-				E7DCEEA91D5A581900F76F02 /* User.swift in Sources */,
-				E7049A241D5913F7003893B4 /* CreateGameViewController.swift in Sources */,
-				E7132D471D5CEC6100773926 /* FIRSession.swift in Sources */,
+				E732D2061D6CF9E70032A5CA /* FIRUser.swift in Sources */,
+				E732D1FD1D6CF9BF0032A5CA /* JoinGameViewController.swift in Sources */,
+				E732D1FB1D6CF9BF0032A5CA /* CreateGameViewController.swift in Sources */,
+				E732D1FE1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift in Sources */,
 				E7049A221D5913F7003893B4 /* AppDelegate.swift in Sources */,
-				E7DCEEA21D5A4D5700F76F02 /* JoinOrCreateGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
