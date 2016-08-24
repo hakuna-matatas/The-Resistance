@@ -15,7 +15,7 @@ is sychronized across all users in the same session.
 
 ###TODOS
 ######Game Lobby
--Fix some autolayout issues for iPhone 4s + when the phone goes to landscape
--Make a better UI
+  - Fix some autolayout issues for iPhone 4s + when the phone goes to landscape
+  - Make a better UI
 
 
