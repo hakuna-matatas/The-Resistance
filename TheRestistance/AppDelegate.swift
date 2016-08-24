@@ -24,12 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /* If the user terminated the app without clicking 'leave game', he/she will
            be brought back to their old session */
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        if let previousSession = userDefaults.valueForKey("sessionCode") {
+        if let _ = userDefaults.valueForKey("sessionCode") {
             self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            
-            
             
             let gameLobbyVC = storyboard.instantiateViewControllerWithIdentifier("GameLobbyViewController") as! GameLobbyViewController
             //gameLobbyVC.accessCodeLabel.text = String(previousSession)

@@ -123,10 +123,10 @@
 		E7DCEEA31D5A4D6000F76F02 /* Pre-Playing View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E732D1FA1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift */,
+				E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */,
 				E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */,
 				E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */,
-				E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */,
-				E732D1FA1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift */,
 			);
 			name = "Pre-Playing View Controllers";
 			sourceTree = "<group>";

@@ -11,6 +11,7 @@ import Firebase
 
 class JoinGameViewController: UIViewController {
 
+    @IBOutlet weak var invalidCodeLabel: UILabel!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var accessCodeTextField: UITextField!
     
@@ -18,15 +19,15 @@ class JoinGameViewController: UIViewController {
         if let sessionCode = accessCodeTextField.text {
             FIRSessionCodes.verifySessionCode(sessionCode, callback: { (codeVerified) in
                 if(codeVerified) {
+                    self.invalidCodeLabel.text = ""
                     let username = self.usernameTextField.text!
                     
                     FIRUser.createNewUser(username, sessionCode: sessionCode, userCreatedHandler: {
                         self.performSegueWithIdentifier("segueToGameLobbyVC", sender: self)
                     })
-                    
                 }
                 else {
-                    print("invalid Code")
+                    self.invalidCodeLabel.text = "Invalid Code"
                 }
             })
         }

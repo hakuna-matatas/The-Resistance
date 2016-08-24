@@ -13,6 +13,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var accessCodeLabel: UILabel!
     @IBOutlet weak var playerTableView: UITableView!
     
+    let number_of_sections = 1
     let header_text = "Players currently in the lobby:"
     
     var playersInLobby = [String]() {
@@ -67,7 +68,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return number_of_sections
     }
  
 }

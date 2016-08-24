@@ -18,42 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9L-Qy-pNb">
-                                <rect key="frame" x="255" y="185" width="91" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="1CM-Td-uSq"/>
-                                    <constraint firstAttribute="height" constant="30" id="Gzj-Ym-uI1"/>
-                                </constraints>
-                                <state key="normal" title="Create Game"/>
-                                <connections>
-                                    <segue destination="o5i-jB-Tgm" kind="show" identifier="goToCreateGameVC" id="JL0-Df-Ncd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-bH-NKV">
-                                <rect key="frame" x="263" y="255" width="74" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="DtE-fX-krT"/>
-                                    <constraint firstAttribute="height" constant="30" id="GlP-uk-Njw"/>
-                                </constraints>
-                                <state key="normal" title="Join Game"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToJoinGameVC" id="rBO-jb-5F0"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ofx-Jr-Gfw">
+                                <rect key="frame" x="255" y="170" width="91" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9L-Qy-pNb">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="WN7-zA-5pv"/>
+                                            <constraint firstAttribute="width" constant="91" id="hGb-Zr-nC6"/>
+                                        </constraints>
+                                        <state key="normal" title="Create Game"/>
+                                        <connections>
+                                            <segue destination="o5i-jB-Tgm" kind="show" identifier="goToCreateGameVC" id="JL0-Df-Ncd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-bH-NKV">
+                                        <rect key="frame" x="0.0" y="55" width="91" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Vok-mJ-t7h"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="u4z-Ag-Sym"/>
+                                        </constraints>
+                                        <state key="normal" title="Join Game"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="goToJoinGameVC" id="rBO-jb-5F0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="G9L-Qy-pNb" firstAttribute="top" secondItem="yjf-gP-C67" secondAttribute="bottom" constant="165" id="LOi-Dh-iMi"/>
-                            <constraint firstItem="G9L-Qy-pNb" firstAttribute="centerX" secondItem="5fL-kN-i2g" secondAttribute="centerX" id="Pdq-ji-zzS"/>
-                            <constraint firstItem="ET6-bH-NKV" firstAttribute="centerX" secondItem="5fL-kN-i2g" secondAttribute="centerX" id="dtr-ns-jVC"/>
-                            <constraint firstItem="ET6-bH-NKV" firstAttribute="top" secondItem="G9L-Qy-pNb" secondAttribute="bottom" constant="40" id="pUv-gr-grY"/>
+                            <constraint firstItem="ofx-Jr-Gfw" firstAttribute="top" secondItem="yjf-gP-C67" secondAttribute="bottom" constant="150" id="7uH-X0-tHE"/>
+                            <constraint firstItem="ofx-Jr-Gfw" firstAttribute="centerX" secondItem="5fL-kN-i2g" secondAttribute="centerX" id="ap7-6A-My6"/>
+                            <constraint firstItem="ofx-Jr-Gfw" firstAttribute="centerY" secondItem="5fL-kN-i2g" secondAttribute="centerY" id="eqO-aS-Phz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eqO-aS-Phz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="q28-e2-ZEW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dn8-hV-dNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-593" y="252"/>
+            <point key="canvasLocation" x="-593" y="260"/>
         </scene>
         <!--Create Game View Controller-->
         <scene sceneID="WPR-WP-EHg">
@@ -67,7 +76,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-6D-mRS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-6D-mRS">
                                 <rect key="frame" x="248" y="208" width="104" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CsZ-c2-UWu"/>
@@ -78,7 +87,7 @@
                                     <action selector="createGameButton:" destination="o5i-jB-Tgm" eventType="touchUpInside" id="GE8-tq-4ge"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dM2-Ye-mfj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dM2-Ye-mfj">
                                 <rect key="frame" x="227" y="141" width="146" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="P8U-6h-Yhg"/>
@@ -87,7 +96,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-kX-jJj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-kX-jJj">
                                 <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VJv-F5-dJS"/>
@@ -104,11 +113,17 @@
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="8nO-kX-jJj" secondAttribute="leading" id="Agp-KU-Coe"/>
                             <constraint firstItem="iiN-6D-mRS" firstAttribute="centerX" secondItem="Hpp-BC-gM8" secondAttribute="centerX" id="fAn-IN-nAV"/>
+                            <constraint firstItem="8nO-kX-jJj" firstAttribute="top" secondItem="nLf-7N-16U" secondAttribute="bottom" id="iYL-Fl-hOg"/>
                             <constraint firstItem="dM2-Ye-mfj" firstAttribute="top" secondItem="nLf-7N-16U" secondAttribute="bottom" constant="121" id="t0c-1i-wf4"/>
                             <constraint firstItem="iiN-6D-mRS" firstAttribute="top" secondItem="dM2-Ye-mfj" secondAttribute="bottom" constant="37" id="tqJ-vE-WK5"/>
                             <constraint firstItem="dM2-Ye-mfj" firstAttribute="centerX" secondItem="Hpp-BC-gM8" secondAttribute="centerX" id="ty3-qg-NiZ"/>
                             <constraint firstItem="8nO-kX-jJj" firstAttribute="top" secondItem="nLf-7N-16U" secondAttribute="bottom" id="vUI-N5-AsC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vUI-N5-AsC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="usernameTextField" destination="dM2-Ye-mfj" id="KsZ-Ri-Xqd"/>
@@ -132,7 +147,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Access Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-Dq-HhS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKQ-Dq-HhS">
                                 <rect key="frame" x="250" y="28" width="100.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -161,7 +176,7 @@
                                     <segue destination="gpO-p6-5ee" kind="show" id="zS0-aW-iLr"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kcg-Ur-7Vx" userLabel="Players Table View">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kcg-Ur-7Vx" userLabel="Players Table View">
                                 <rect key="frame" x="20" y="167" width="560" height="266"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -177,7 +192,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-vT-JOh">
-                                                    <rect key="frame" x="17" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="17" y="11" width="535" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -209,6 +224,11 @@
                             <constraint firstItem="Kcg-Ur-7Vx" firstAttribute="leading" secondItem="hs3-Ky-KSi" secondAttribute="leadingMargin" id="uRh-HW-wRB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="zhv-HX-nWj" secondAttribute="leading" id="xRp-V2-W0k"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Chs-fB-ySV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="accessCodeLabel" destination="rKQ-Dq-HhS" id="TZQ-Hy-5QT"/>
@@ -249,35 +269,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="access code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wla-Vf-nMi">
-                                <rect key="frame" x="225" y="186" width="150" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="bYc-Az-M08">
+                                <rect key="frame" x="70" y="195" width="460" height="136"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yk0-kb-DlF">
+                                        <rect key="frame" x="10" y="0.0" width="440" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="Idv-vD-ix9"/>
+                                            <constraint firstAttribute="height" constant="30" id="kwY-WB-OcL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Idv-vD-ix9"/>
+                                                <exclude reference="kwY-WB-OcL"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="access code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wla-Vf-nMi">
+                                        <rect key="frame" x="10" y="53" width="440" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-fg-9sm">
+                                        <rect key="frame" x="215" y="106" width="30" height="30"/>
+                                        <state key="normal" title="OK"/>
+                                        <connections>
+                                            <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbW-vJ-v4n"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="6Da-sB-SPm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yk0-kb-DlF" secondAttribute="trailing" constant="10" id="KhS-XI-097"/>
+                                    <constraint firstItem="Yk0-kb-DlF" firstAttribute="leading" secondItem="bYc-Az-M08" secondAttribute="leading" constant="10" id="txp-Ns-SfK"/>
+                                    <constraint firstAttribute="trailing" secondItem="wla-Vf-nMi" secondAttribute="trailing" constant="10" id="x1K-Qz-ygy"/>
+                                    <constraint firstItem="wla-Vf-nMi" firstAttribute="leading" secondItem="bYc-Az-M08" secondAttribute="leading" constant="10" id="zUT-Bb-Sh1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-fg-9sm">
-                                <rect key="frame" x="285" y="241" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="AKT-1c-6GU"/>
-                                    <constraint firstAttribute="width" constant="30" id="w7H-pL-2dw"/>
-                                </constraints>
-                                <state key="normal" title="OK"/>
-                                <connections>
-                                    <action selector="joinGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZbW-vJ-v4n"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yk0-kb-DlF">
-                                <rect key="frame" x="225" y="133" width="150" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="HxL-Uv-8gv"/>
-                                    <constraint firstAttribute="height" constant="30" id="rCz-47-fcK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-eZ-dsW">
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-eZ-dsW">
                                 <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="34" id="8Xp-PI-B65"/>
@@ -289,21 +319,28 @@
                                     <segue destination="KWH-yz-9Gn" kind="unwind" identifier="unwindToJoinOrCreateVC" unwindAction="unwindToFirstVC:" id="jYU-HR-idU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UP-4n-J8l">
+                                <rect key="frame" x="253" y="96" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3rQ-fg-9sm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1x5-FT-VKS"/>
+                            <constraint firstItem="5UP-4n-J8l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="2Ai-oT-jfF"/>
                             <constraint firstItem="pZE-eZ-dsW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="69j-AZ-rjv"/>
-                            <constraint firstItem="wla-Vf-nMi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7tN-6c-bdw"/>
-                            <constraint firstItem="Yk0-kb-DlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9AX-rC-WkF"/>
-                            <constraint firstItem="wla-Vf-nMi" firstAttribute="top" secondItem="Yk0-kb-DlF" secondAttribute="bottom" constant="23" id="9cN-RQ-SrR"/>
-                            <constraint firstItem="3rQ-fg-9sm" firstAttribute="top" secondItem="wla-Vf-nMi" secondAttribute="bottom" constant="25" id="NJ7-4H-L7k"/>
-                            <constraint firstItem="wla-Vf-nMi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="Wet-ne-Biz"/>
+                            <constraint firstItem="5UP-4n-J8l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7AP-PC-SFw"/>
+                            <constraint firstItem="bYc-Az-M08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JGT-NX-ojV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bYc-Az-M08" secondAttribute="trailing" constant="50" id="lut-sX-G8h"/>
+                            <constraint firstItem="bYc-Az-M08" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="m3N-fY-sAS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="pZE-eZ-dsW" secondAttribute="leading" id="sOg-d2-8g5"/>
+                            <constraint firstItem="bYc-Az-M08" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="175" id="uAI-D7-sux"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="accessCodeTextField" destination="wla-Vf-nMi" id="7nX-ff-p6a"/>
+                        <outlet property="invalidCodeLabel" destination="5UP-4n-J8l" id="r18-dc-eX9"/>
                         <outlet property="usernameTextField" destination="Yk0-kb-DlF" id="pG0-Uw-c9h"/>
                         <segue destination="GRN-rd-dsU" kind="show" identifier="segueToGameLobbyVC" id="q7F-oV-de1"/>
                     </connections>
@@ -316,7 +353,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xek-8g-4rq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSB-T0-t3E" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="mSB-T0-t3E" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="miS-Ue-IbA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -333,7 +370,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="zS0-aW-iLr"/>
         <segue reference="q7F-oV-de1"/>
-        <segue reference="ACX-EA-ozU"/>
     </inferredMetricsTieBreakers>
 </document>

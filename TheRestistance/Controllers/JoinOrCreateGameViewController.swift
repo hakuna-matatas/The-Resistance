@@ -15,7 +15,6 @@ class JoinOrCreateGameViewController: UIViewController {
     }
     
     @IBAction func unwindToFirstVC(segue: UIStoryboardSegue) {
-        
     }
 
 }
