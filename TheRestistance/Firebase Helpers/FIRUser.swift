@@ -34,11 +34,24 @@ class FIRUser {
     }
     
     /** Adds the current user (the one that's using the device) to the session that corresponds
-        with the provided code. If the player disconnects, he/she will be removed from that session */
+        with the provided code. If the player disconnects, he/she will be removed from that session. */
     private static func addUserToSession(code: String, username: String) {
         let uid = FIRConstants.currentUser!.uid
-        let sessionPlayerRef = FIRConstants.sessionsRef.child(code).child(uid)
-        sessionPlayerRef.setValue(username)
+        let sessionRef = FIRConstants.sessionsRef.child(code)
+        let gameStartedRef = sessionRef.child("game started")
+        
+        gameStartedRef.observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            if(!snapshot.exists()) {
+                gameStartedRef.setValue(false)
+            }
+            else {
+                //Game has started
+                print("Some value: \(snapshot.value)")
+            }
+        })
+        
+        sessionRef.child("players").child(uid).setValue("inLobby")
+        sessionRef.child("inLobby").child(uid).setValue(username)
     }
     
     /** Returns information about a user in the form of a callback.
@@ -56,7 +69,17 @@ class FIRUser {
     /** Deletes the current user from the session */
     static func deleteUserFromSession(sessionCode: String) {
         let uid = FIRConstants.currentUser!.uid
-        FIRConstants.sessionsRef.child(sessionCode).child(uid).removeValue()
+        let sessionRef = FIRConstants.sessionsRef.child(sessionCode)
+        
+        sessionRef.child("players").child(uid).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            //playerStatus holds a string describing whether the player is in the lobby or game
+            if let playerStatus = snapshot.value as? String {
+                print(playerStatus)
+                sessionRef.child(playerStatus).child(uid).removeValue()
+            }
+            
+            sessionRef.child("players").child(uid).removeValue()
+        })
         FIRConstants.usersRef.child(uid).child("session").setValue("nil")
         NSUserDefaults.standardUserDefaults().removeObjectForKey("sessionCode")
     }

@@ -26,6 +26,11 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
         FIRUser.deleteUserFromSession(accessCodeLabel.text!)
     }
     
+    @IBAction func startGameButton(sender: AnyObject) {
+        FIRSession.startSession(accessCodeLabel.text!)
+        self.performSegueWithIdentifier("goToGameStart", sender: self)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +40,7 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
             self.accessCodeLabel.text = sessionCode
             
             /* Must wait until the VC knows the accessCode before we can access the player information */
-            FIRSession.observeSessionInfo(sessionCode!, addPlayerCallback: self.handleAddedPlayer, deletePlayerCallback: self.handleDeletedPlayer)
+            FIRSession.observeSessionInfo(sessionCode!, addPlayerCallback: self.handleAddedPlayer, deletePlayerCallback: self.handleDeletedPlayer, gameChangedStateCallback: self.handleGameStateChange)
         })
             
         playerTableView.delegate = self
@@ -49,6 +54,16 @@ class GameLobbyViewController: UIViewController, UITableViewDelegate, UITableVie
     func handleDeletedPlayer(deletedPlayer: String) {
         let indexOfDeletedPlayer = playersInLobby.indexOf(deletedPlayer)!
         playersInLobby.removeAtIndex(indexOfDeletedPlayer)
+    }
+    
+    func handleGameStateChange(inProgress: Bool) {
+        if(inProgress) {
+            self.performSegueWithIdentifier("goToGameStart", sender: self)
+            
+        }
+        else {
+            //Game ended
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

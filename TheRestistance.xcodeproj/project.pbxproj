@@ -13,6 +13,7 @@
 		E7049A291D5913F7003893B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7049A281D5913F7003893B4 /* Assets.xcassets */; };
 		E7049A2C1D5913F7003893B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7049A2A1D5913F7003893B4 /* LaunchScreen.storyboard */; };
 		E7049A341D591802003893B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7049A331D591802003893B4 /* GoogleService-Info.plist */; };
+		E713107F1D73BEBD007906FF /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E713107E1D73BEBD007906FF /* GameStartViewController.swift */; };
 		E732D1FB1D6CF9BF0032A5CA /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */; };
 		E732D1FC1D6CF9BF0032A5CA /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */; };
 		E732D1FD1D6CF9BF0032A5CA /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */; };
@@ -35,6 +36,7 @@
 		E7049A2B1D5913F7003893B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7049A2D1D5913F7003893B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7049A331D591802003893B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E713107E1D73BEBD007906FF /* GameStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
 		E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGameViewController.swift; path = Controllers/CreateGameViewController.swift; sourceTree = "<group>"; };
 		E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameLobbyViewController.swift; path = Controllers/GameLobbyViewController.swift; sourceTree = "<group>"; };
 		E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JoinGameViewController.swift; path = Controllers/JoinGameViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				E732D1F91D6CF9BF0032A5CA /* JoinGameViewController.swift */,
 				E732D1F71D6CF9BF0032A5CA /* CreateGameViewController.swift */,
 				E732D1F81D6CF9BF0032A5CA /* GameLobbyViewController.swift */,
+				E713107E1D73BEBD007906FF /* GameStartViewController.swift */,
 			);
 			name = "Pre-Playing View Controllers";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				E732D2061D6CF9E70032A5CA /* FIRUser.swift in Sources */,
 				E732D1FD1D6CF9BF0032A5CA /* JoinGameViewController.swift in Sources */,
 				E732D1FB1D6CF9BF0032A5CA /* CreateGameViewController.swift in Sources */,
+				E713107F1D73BEBD007906FF /* GameStartViewController.swift in Sources */,
 				E732D1FE1D6CF9BF0032A5CA /* JoinOrCreateGameViewController.swift in Sources */,
 				E7049A221D5913F7003893B4 /* AppDelegate.swift in Sources */,
 			);

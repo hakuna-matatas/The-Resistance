@@ -36,4 +36,6 @@ class FIRSessionCodes {
             }
         })
     }
+    
+    //TODO: Check if session code already exists
 }
