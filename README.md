@@ -10,12 +10,14 @@ to identify the spies and eliminate them.
 
 ###Progress
 So far, only the game lobby logic has been implemented using Firebase. Players can create, join, and leave games; the player list 
-is sychronized across all users in the same session.
+is sychronized across all users in the same session. If a player exits the app while in a session, they will be brought back to their 
+previous session.
 
 
 ###TODOS
 ######Game Lobby
   - Fix some autolayout issues for iPhone 4s + when the phone goes to landscape
   - Make a better UI
+
 
 
